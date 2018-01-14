@@ -5,13 +5,13 @@ var accordsList = [];
 
 var tone = {
     tonic:           ['до', 'до-диез', 'ре','ре-диез', 'ми', 'фа', 'фа-диез', 'соль', 'соль-диез', 'ля', 'ля-диез', 'си'],
-	tonicShortEntry:   ['C',  'C#/D♭',   'D',  'D#/E♭',   'E',  'F',  'F#/G♭',    'G',   'G#/A♭',      'A',  'A#/B',    'H'],
+	tonicShortEntry:   ['C',  'C#/D♭',   'D',  'D#/E♭',   'E',  'F',  'F#/G♭',    'G',   'G#/A♭',      'A',  'B',       'H'],
 	tonicAbstractValue:  [1,   1.5,       2,    2.5,       3,   4,     4.5,      5,       5.5,         6,   6.5,         7],
 	tonicArrayPosition:  [0,    1,        2,     3,        4,   5,      6,       7,        8,           9,   10,         11]
   }
   
   
-
+getAccordsList();
   
 
 function getAccordsList() {
@@ -27,6 +27,7 @@ function upAccordsList() {
 	
 	for (var i = 0; i < +accordsList.length; i++) {
 		var stringInWork = '';
+		
 		
 		var j = 0;
 		while (accordsList[i][0] != tone.tonicShortEntry[j]) {
