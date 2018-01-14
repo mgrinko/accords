@@ -18,6 +18,16 @@ body {
     justify-content: space-between;
 }
 
+.tonic{
+	background: #edc16f;
+	border: 3px solid black;
+	border-radius: 5px;
+	padding: 3px;
+	margin: 7px 0;
+	width: 20px;
+	text-align: center;
+}
+
 .header{
 	padding: 10px;
 	margin: 0;
@@ -86,6 +96,7 @@ body {
   text-align: center;
   height: 35px;
   border: 2px solid black;
+  border-radius: 5px;
   padding:2px;
   box-sizing: border-box;
   box-shadow: 4px 4px black;	
